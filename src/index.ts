@@ -96,7 +96,6 @@ async function fetchData(cookies: Dict<string>) {
 }
 
 export function apply(ctx: Context, config: Config) {
-    console.log("1")
     fetchData({
         'openbmclapi-jwt': config.openbmclapi_jwt,
     });
@@ -106,7 +105,6 @@ export function apply(ctx: Context, config: Config) {
             'openbmclapi-jwt': config.openbmclapi_jwt,
         });
     }, 30000);
-    console.log(clusterlist)
     ctx.command('brrs <cluster_name>' ,'通过节点名称查找节点')
         .action(async (_, cluster_name) => {
             if (!cluster_name) {
