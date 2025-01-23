@@ -1,22 +1,39 @@
 {
   "name": "koishi-plugin-obastatus",
   "description": "一个用于查询OpenBMCLAPI信息的插件",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
+  "contributors": [                         
+    "unify-z <i@ifeng.asia>"
+  ],
   "files": [
     "lib",
     "dist"
   ],
   "license": "MIT",
   "scripts": {},
+  "repository": {                           
+  "type": "git",
+  "url": "git+https://github.com/unify-z/koishi-plugin-obastatus.git"
+},
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "obastatus",
+    "openbmclapi",
+    "oba"
   ],
   "devDependencies": {},
   "peerDependencies": {
-    "koishi": "^4.18.0"
+    "koishi": "^4.16.0"
+  },
+  "koishi": {
+    "description": {                      
+      "en": "A plugin for querying OpenBMCLAPI information",
+      "zh": "一个用于查询OpenBMCLAPI信息的插件"
+    },
+    "service": {} 
   }
 }
